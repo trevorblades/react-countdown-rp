@@ -15,6 +15,7 @@ Specify a future time (in milliseconds) in the `endsAt` prop. The countdown will
 ```js
 import Countdown from 'react-countdown-rp';
 
+// 10 second countdown
 <Countdown endsAt={Date.now() + 10000}>
   {({secondsRemaining, msRemaining}) => (
     <div>
