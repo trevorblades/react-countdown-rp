@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "A render props component that counts down",
   "author": "Trevor Blades <tdblades@gmail.com>",
+  "repository": "trevorblades/react-countdown-rp",
   "main": "index.js",
   "scripts": {
     "pretest": "eslint index.js",
