@@ -28,9 +28,14 @@ class Countdown extends Component {
   tick() {
     const timeRemaining = Math.max(0, this.props.endsAt - Date.now());
     this.setState({timeRemaining});
-    if (timeRemaining) {
-      this.request = requestAnimationFrame(this.tick);
+    if (!timeRemaining) {
+      if (this.props.onCompleted) {
+        this.props.onCompleted();
+      }
+      return;
     }
+
+    this.request = requestAnimationFrame(this.tick);
   }
 
   render() {
@@ -44,7 +49,8 @@ class Countdown extends Component {
 
 Countdown.propTypes = {
   children: PropTypes.func.isRequired,
-  endsAt: PropTypes.number.isRequired
+  endsAt: PropTypes.number.isRequired,
+  onCompleted: PropTypes.func
 };
 
 module.exports = Countdown;

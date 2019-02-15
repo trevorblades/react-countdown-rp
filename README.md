@@ -25,3 +25,11 @@ import Countdown from 'react-countdown-rp';
   )}
 </Countdown>
 ```
+
+## Props
+
+| Name          | Required | Type       | Description                                                               |
+| ------------- | -------- | ---------- | ------------------------------------------------------------------------- |
+| `endsAt`      | yes      | `Number`   | Millseconds representing the end date (e.g. `date.getTime()`)             |
+| `children`    | yes      | `Function` | Called with object `{secondsRemaining, msRemaining}` as the only argument |
+| `onCompleted` | no       | `Function` | Fired when the countdown reaches 0                                        |
