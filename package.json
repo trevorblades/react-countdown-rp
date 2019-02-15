@@ -1,6 +1,6 @@
 {
   "name": "react-countdown-rp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A render props component that counts down",
   "author": "Trevor Blades <tdblades@gmail.com>",
   "main": "index.js",
