@@ -5,6 +5,13 @@
   "author": "Trevor Blades <tdblades@gmail.com>",
   "repository": "trevorblades/react-countdown-rp",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "countdown",
+    "render-props",
+    "timer",
+    "component"
+  ],
   "scripts": {
     "pretest": "eslint index.js",
     "test": "echo \"Error: no test specified\" && exit"
