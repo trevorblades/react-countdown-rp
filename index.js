@@ -42,7 +42,7 @@ class Countdown extends Component {
     const secondsRemaining = Math.floor(this.state.timeRemaining / 1000);
     return this.props.children({
       secondsRemaining,
-      msRemaining: secondsRemaining * 1000 - this.state.timeRemaining
+      msRemaining: this.state.timeRemaining - secondsRemaining * 1000
     });
   }
 }
