@@ -22,7 +22,7 @@ class Countdown extends Component {
   }
 
   componentWillUnmount() {
-    cancelAnimationFrame(this.request);
+    cancelAnimationFrame(this.animationFrame);
   }
 
   tick() {
@@ -35,7 +35,7 @@ class Countdown extends Component {
       return;
     }
 
-    this.request = requestAnimationFrame(this.tick);
+    this.animationFrame = requestAnimationFrame(this.tick);
   }
 
   render() {
