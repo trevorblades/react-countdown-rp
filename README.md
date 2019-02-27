@@ -26,10 +26,8 @@ import Countdown from 'react-countdown-rp';
 </Countdown>
 ```
 
-## Props
-
-| Name          | Type       | Required | Description                                                               |
-| ------------- | ---------- | -------- | ------------------------------------------------------------------------- |
-| `endsAt`      | `Number`   | yes      | Millseconds representing the end date (e.g. `date.getTime()`)             |
-| `children`    | `Function` | yes      | Called with object `{secondsRemaining, msRemaining}` as the only argument |
-| `onCompleted` | `Function` | no       | Fired when the countdown reaches 0                                        |
+| Prop name   | Type   | Required | Description                                                               |
+| ----------- | ------ | -------- | ------------------------------------------------------------------------- |
+| endsAt      | number | yes      | Millseconds representing the end date (e.g. `date.getTime()`)             |
+| children    | func   | yes      | Called with object `{secondsRemaining, msRemaining}` as the only argument |
+| onCompleted | func   | no       | Fired when the countdown reaches 0                                        |
